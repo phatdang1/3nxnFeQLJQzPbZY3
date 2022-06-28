@@ -1,6 +1,6 @@
 from numpy import mean
-from numpy import std
-from data_processing import prepTrainingData
+import matplotlib.pyplot as plt
+from train_classifier import prepTrainingData
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.metrics import classification_report, accuracy_score
 

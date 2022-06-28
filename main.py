@@ -6,7 +6,7 @@ model = 'NN'
 ##### processing data ####
 
 # read in data
-list_of_data = readAndProcessCsv('term-deposit-marketing-2020.csv')
+list_of_data = readAndProcessCsv('term-deposit-marketing-2020.csv', False)
 
 # encoding categorical data (data that not a number)
 job = encodingOneHotVector(list_of_data.job, "job")
@@ -40,6 +40,8 @@ processed_data = pd.concat([processed_data, job, marital, defaults, housing, loa
 
 # seperate the result from label data
 X, y = dropColumn(processed_data, 'y')
+
+# print out the result and score
 reportAndScore(X, y, model, 0.2)
 
 print('5 folds cross validation:')
