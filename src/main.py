@@ -6,7 +6,7 @@ model = 'RFC'
 ##### processing data ####
 
 # read in data
-list_of_data = readAndProcessCsv('term-deposit-marketing-2020.csv', False)
+list_of_data = readAndProcessCsv('data/term-deposit-marketing-2020.csv', False)
 
 # encoding categorical data (data that not a number)
 job = encodingOneHotVector(list_of_data.job, "job")
