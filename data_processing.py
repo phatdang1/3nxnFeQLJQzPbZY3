@@ -2,11 +2,6 @@ from sys import prefix
 import pandas as pd
 
 
-
-#from sklearn.preprocessing import OneHotEncoder
-
-
-
 # Function to read input data from csv file and make it ready for training
 def readAndProcessCsv(filename, to_list):
     #loading data

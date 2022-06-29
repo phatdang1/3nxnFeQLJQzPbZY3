@@ -29,6 +29,4 @@ def reportAndScore(X, y, model, test_size):
         print(classification_report(y_test, prediction, zero_division=0))
     else:
         print(classification_report(y_test, prediction))
-    # print out the accuracy score
-    print("accuracy:", accuracy_score(y_test, prediction))
    

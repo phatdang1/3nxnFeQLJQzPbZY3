@@ -2,7 +2,7 @@ from data_processing import*
 from result_report import*
 
 # model code: KNN = K-Nearest-Neighbor; DT = Decision Tree; RFC = Random Forest Classifier; NN = Neural Network
-model = 'NN'
+model = 'RFC'
 ##### processing data ####
 
 # read in data
